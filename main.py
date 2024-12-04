@@ -11,8 +11,8 @@ plt.rcParams['axes.unicode_minus'] =False
 
 octave_freq = [131, 139 , 147, 156,  165, 175, 185, 196 , 208, 220, 233 , 247] # 옥타브에 따른 주파수
 octave_name = ['도','도#','레','레#','미','파','파#','솔','솔#','라','라#','시'] # 옥타브에 따른 계이름
-notes = [5,9]
-
+notes = [2,7]
+# np.sign()
 wave1 = 0.5 * np.sin(4 * np.pi * octave_freq[notes[0]] * t)  # 첫 번째 파형
 wave2 = 0.5 * np.sin(4 * np.pi * octave_freq[notes[1]] * t)  # 두 번째 파형
 waves = [wave1, wave2]
